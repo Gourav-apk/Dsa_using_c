@@ -1,0 +1,27 @@
+#include<stdio.h>
+#include<stdlib.h>
+int main()
+{
+    printf("Create your account in instagram\n");
+    char name[13];
+    printf("Enter your name\n");
+    scanf("%s",&name);
+    printf("Enter your phone no. \n");
+   long long int n;
+    scanf("%d",&n);
+    int ,i=0,otp=223344+i;
+    printf("Your OTP %d\n",otp);
+   enter: printf("Enter  OTP\n");
+    int otp2;
+    scanf("%d",&otp2);
+    if(otp==otp2)
+    {
+        printf("Account create seccessfully\n");
+    }
+    else{
+        printf("Wrong OTP \n");
+        goto enter;
+    }
+
+    return 0;
+}

@@ -1,0 +1,8 @@
+#include<stdio.h>
+#pragma GCC poison
+int main()
+{
+    
+    printf("Hello");
+    return 0;
+}

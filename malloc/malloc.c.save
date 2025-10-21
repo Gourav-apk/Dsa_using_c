@@ -1,0 +1,10 @@
+#include<stdio.h>
+#include<stdlib.h>
+int main()
+{
+    int *p=(int *)malloc(int 8);
+    printf("Enter integer value \n");
+    scanf("%d",p+0);
+    printf("")
+    return 0;
+}

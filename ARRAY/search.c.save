@@ -1,0 +1,28 @@
+#include<stdio.h>
+int main()
+{
+    int arr[10]={10,20,30,40,50,60,70,80,90,100};
+    int ch1,ch2;
+    printf("Original array\n");
+    for(int i=0;i<10;i++)
+    {
+        printf("%d = %d\n",i,arr[i]);
+    }
+    printf("Enter two position for swap\n");
+    scanf("%d%d",&ch1,&ch2);
+    arr[ch1]=arr[ch2];
+     arr[ch2]=arr[ch1];
+     for(int i=0;i<10;i++)
+    {
+        printf("%d = %d\n",i,arr[i]);
+    }
+    printf("Searching start.... Enter element\n");
+    scanf("%d",&n);
+     for(int i=0;i<10;i++)
+    {
+        if(n==arr[i])
+            printf("seaching seccefull")
+    }
+    
+    return 0;
+}

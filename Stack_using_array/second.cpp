@@ -1,0 +1,65 @@
+#include<stdio.h>
+#define MAXSIZE 10
+int stack[MAXSIZE],top=-1;
+void Push();
+void Pop();
+void display();
+int main()
+{
+    int choice;
+    do{
+                 printf("..............................Stack..........................,,,\n");
+                printf("1.push \n 2.Pop\n 3. Display\n 4.exit\n");
+                printf("..................................................................\n");
+                printf("Enter your choice\n");
+                scanf("%d",&choice);
+                switch(choice)
+                {
+                    case 1:Push();break;
+                    case 2:Pop();break;
+                    case 3:display();break;
+                    default:printf("Invailed choice\n");
+                    }
+            }while(choice!=4);
+
+            return 0;
+}
+void Push()
+{
+    int n;
+    if(top==MAXSIZE-1)
+        printf("Stack is overflow\n");
+    else
+    {
+        printf("Enter an element of stack\n");
+        scanf("%d",&n);
+        top++;
+        stack[top]=n;
+    }
+}
+void display ()
+{
+    int i;
+    if(top==-1)
+        printf("Stack is empty\n");
+    else
+    {
+        printf("Element of stack\n");
+        for(i=top;i>=0;i--)
+        {
+            printf("%d \n",stack[i]);
+        }
+    }
+}
+void Pop()
+{
+    int n;
+    if(top==-1)
+        printf("Stack is empty\n");
+    else
+    {
+        n=stack[top];
+        top--;
+        printf("Delete element of stack: %d",n);
+    }
+}

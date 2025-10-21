@@ -1,0 +1,14 @@
+#include<stdio.h>
+int main() 
+{
+    
+}
+  auto  int n=0;
+    if(n<=10)
+    {
+        printf("Maan\n");
+        main();          
+                                        
+    }
+    return 0;
+}

@@ -1,0 +1,16 @@
+#include<stdio.h>
+#pragma warn +rvl
+#pragma warn -pr
+#pragma warn . rch
+
+int show(int n)
+{
+    printf("show \n");
+}
+int main()
+{
+    show(2);
+    return 0;
+    pr
+}
+

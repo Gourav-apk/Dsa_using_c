@@ -1,0 +1,6 @@
+#include<stdio.h>
+int count1=90;
+void display()
+{
+    printf("Count kee value hai %d\n",count1);
+}

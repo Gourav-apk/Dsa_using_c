@@ -1,0 +1,13 @@
+#include<stdio.h>
+#include"third.h"
+  extern int count1;
+void display();
+
+int main()
+{
+display();
+count1=200;
+display();
+
+    return 0;
+}
